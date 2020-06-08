@@ -61,9 +61,6 @@ export default {
   },
   computed: {
     apiUrl () {
-      console.log("in id")
-      console.log(process.env.API_URL)
-      console.log(process.env.GRAPHQL_URL)
       return process.env.API_URL || 'http://localhost:1337'
     }
   },

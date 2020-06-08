@@ -60,9 +60,6 @@ export default {
       })
     },
     apiUrl () {
-      console.log("in index")
-      console.log(process.env.API_URL)
-      console.log(process.env.GRAPHQL_URL)
       return this.$store.getters['environment/API_URL']
     }
   }
