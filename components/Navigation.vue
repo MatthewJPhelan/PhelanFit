@@ -127,8 +127,8 @@ export default {
       app: true,
       items: [
         { title: 'Home', icon: 'mdi-view-dashboard', to: '/' },
-        { title: 'Blogs', icon: 'mdi-image', to: '/restaurants' },
-        { title: 'About', icon: 'mdi-help-box', to: '/about' }
+        { title: 'About', icon: 'mdi-help-box', to: '/about' },
+        { title: 'Blogs', icon: 'mdi-image', to: '/blogs' }
       ],
       permanent: true,
       floating: true,

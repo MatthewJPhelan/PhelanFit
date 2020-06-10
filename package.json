@@ -15,10 +15,13 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "bootstrap": "^4.5.0",
     "cookieparser": "^0.1.0",
     "graphql": "^15.0.0",
+    "jquery": "^3.5.1",
     "js-cookie": "^2.2.1",
     "nuxt": "^2.0.0",
+    "popper.js": "^1.16.1",
     "strapi-sdk-javascript": "^0.3.3",
     "uikit": "^3.5.3",
     "vue-stripe-elements-plus": "^0.3.2"

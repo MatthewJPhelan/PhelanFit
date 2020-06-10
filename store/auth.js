@@ -25,7 +25,7 @@ export const getters = {
   email: (state) => {
     return state.user.email
   },
-  API_URL: (state) => {
+  API_URL: () => {
     return process.env.API_URL || 'http://localhost:1337'
   }
 }

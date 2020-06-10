@@ -1,19 +1,21 @@
 <template>
-  <div class="landing-header">
-    <div class="landing-header__content-container">
-      <div class="landing-header__title">
-        <div class="landing-header__title--content">
-          {{ siteName }}
+  <section>
+    <div class="landing-header">
+      <div class="landing-header__content-container">
+        <div class="landing-header__title">
+          <div class="landing-header__title--content">
+            {{ siteName }}
+          </div>
         </div>
-      </div>
-      <div class="landing-header__tagline">
-        <div class="landing-header__tagline-content">
-          <strong>{{ siteDescription }}</strong>
+        <div class="landing-header__tagline">
+          <div class="landing-header__tagline-content">
+            <strong>{{ siteDescription }}</strong>
+          </div>
         </div>
       </div>
     </div>
-    <scroll-icon class="landing-header__scroll-icon" />
-  </div>
+    <scroll-icon class="landing-header__scroll-icon text-center" />
+  </section>
 </template>
 
 <script>
@@ -94,7 +96,6 @@ export default {
         &-classes {
             left: calc(100% - 2.25rem);
 
-
             &--padwork {
                 display: flex;
                 align-items: center;
@@ -110,8 +111,9 @@ export default {
     }
 
     &__scroll-icon {
-        position: absolute;
-        bottom: 7.5rem;
+      margin: auto;
+      position: relative;
+      bottom: 5rem;
     }
 }
 

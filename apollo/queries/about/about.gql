@@ -1,0 +1,11 @@
+query About {
+  about {
+    title
+    description
+    ctaText
+    ctaLink
+    avatar {
+      url
+    }
+  }
+}

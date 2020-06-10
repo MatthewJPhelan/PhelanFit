@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .website-main {
   margin-top: 16px;
   margin-right: 16px;

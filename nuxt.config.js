@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import webpack from 'webpack'
 
 export default {
   mode: 'universal',
@@ -37,11 +38,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['uikit/dist/css/uikit.min.css', 'uikit/dist/css/uikit.css'],
+  css: ['uikit/dist/css/uikit.min.css', 'uikit/dist/css/uikit.css', '~/node_modules/bootstrap/dist/css/bootstrap.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/uikit.js', ssr: false }],
+  plugins: [{ src: '~/plugins/uikit.js', ssr: false }, '~plugins/bootstrap.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -83,10 +84,27 @@ export default {
   /*
    ** Build configuration
    */
+
   build: {
-    /*
-     ** You can extend webpack config here
+    /**
+     * add external plugins
      */
-    extend (config, ctx) {}
+    vendor: ['jquery', 'bootstrap'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery'
+      })
+    ],
+    /*
+    ** Run ESLint on save
+    */
+    extend (config, ctx) {
+      config.module.rules.push({
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /(node_modules)/
+      })
+    }
   }
 }
