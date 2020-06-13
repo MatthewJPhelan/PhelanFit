@@ -3,15 +3,13 @@
     id="features"
     class="grey lighten-3"
   >
-    <div class="py-6" />
-
-    <v-container class="text-center">
-      <h2 class="display-1 font-weight-bold mb-6">
+    <v-container class="text-center py-12">
+      <h2 class="display-1 mb-2">
         VUETIFY FEATURES
       </h2>
 
       <v-responsive
-        class="mx-auto mb-6"
+        class="mx-auto mb-4"
         width="56"
       >
         <v-divider class="mb-1" />
@@ -28,7 +26,7 @@
         >
           <v-card
             id="object"
-            class="py-12 px-4 feature-card"
+            class="py-6 px-4 feature-card"
             color="grey lighten-5 elevation-12"
             flat
           >
@@ -59,13 +57,11 @@
         </v-col>
       </v-row>
     </v-container>
-
-    <div class="py-12" />
   </section>
 </template>
 
 <script>
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
   name: 'Carousel',
@@ -91,18 +87,18 @@ export default {
     }
   },
   mounted () {
-    const windowWidth = $(window).width() - $('#object').width()
-    const documentHeight = $(document).height() - $(window).height()
+  //   const windowWidth = $(window).width() - $('#object').width()
+  //   const documentHeight = $(document).height() - $(window).height()
 
-    $(function () {
-      $(window).scroll(function () {
-        const scrollPosition = $(window).scrollTop() - $(window).height()
-        const objectPositionLeft = windowWidth * (scrollPosition / documentHeight)
-        $('#object').css({
-          left: objectPositionLeft
-        })
-      })
-    })
+  //   $(function () {
+  //     $(window).scroll(function () {
+  //       const scrollPosition = $(window).scrollTop() - $(window).height()
+  //       const objectPositionLeft = windowWidth * (scrollPosition / documentHeight)
+  //       $('#object').css({
+  //         left: objectPositionLeft
+  //       })
+  //     })
+  //   })
   }
 }
 
@@ -111,5 +107,6 @@ export default {
 <style lang="scss" scoped>
 .feature-card {
   border-radius: 0.5rem;
+  height: 100%;
 }
 </style>

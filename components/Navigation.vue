@@ -36,7 +36,6 @@
       </div>
 
       <v-list
-        shaped
         nav
         class="py-0"
       >
@@ -58,7 +57,6 @@
 
       <template v-slot:append>
         <v-list
-          shaped
           nav
           class="py-0"
         >

@@ -1,0 +1,10 @@
+query Blogs {
+  blogs {
+    id
+    title
+    subtitle
+    image {
+      url
+    }
+  }
+}

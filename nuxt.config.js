@@ -68,6 +68,13 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
+          // primary: '#fff',
+          // accent: '#2e323cff',
+          // secondary: '#2b4351ff',
+          // info: '#5b7d87ff',
+          // warning: '#91b3bcff',
+          // error: '#bea77dff',
+          // success: '#c4bbb8ff'
         }
       }
     }

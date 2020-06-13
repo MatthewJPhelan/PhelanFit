@@ -15,8 +15,9 @@
       </v-responsive>
 
       <v-responsive
-        class="mx-auto title font-weight-light mb-8"
+        class="mx-auto title text-error font-weight-light mb-8"
         max-width="720"
+        color="error"
       >
         {{ about.description }}
       </v-responsive>
